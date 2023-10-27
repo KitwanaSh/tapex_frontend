@@ -28,11 +28,11 @@ const ItemList = ({address}) => {
             hover:scale-105 transition-transform duration-300 ease-in-out flex-1 mt-5"
           >
             <div className="text-xl font-semibold">
-              <span className='block'>{item.text}</span>
-              <span className='block'>Name: {item.name}</span>
-              <span className='block'>Balance: {item.balance}</span>
-              <span className='block'>Expenses: {item.expenses}</span>
-              <span className='block'>Rewards: {item.rewards}</span>
+              <span className='block text-blue-400'>{item.text}</span>
+              <span className='block text-blue-400'>Name: {item.name}</span>
+              <span className='block text-blue-400'>Balance: {item.balance}</span>
+              <span className='block text-blue-400'>Expenses: {item.expenses}</span>
+              <span className='block text-blue-400'>Rewards: {item.rewards}</span>
             </div>
           </div>
         ))}

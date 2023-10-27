@@ -49,7 +49,7 @@ function App() {
     return <ConnectWallet connect={connectWallet} />
   }
   return (
-    <div className="bg-[url('/images/back-g.jpg')] min-h-screen flex items-center justify-center">
+    <div className="bg-blue-200 min-h-screen flex items-center justify-center">
       <ItemList address={selectedAddress} />
     </div>
   );
