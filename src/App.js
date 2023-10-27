@@ -17,23 +17,10 @@ function App() {
 
       setSelectedAddress(address);
 
-      window.ethereum.on("accountsChanged", ([newAddress]) => {
-        if (newAddress === undefined) {
-          setSelectedAddress(undefined);
-          return;
-        }
-
-        setSelectedAddress(newAddress);
-        // connection to SC
-        // getting owned pets
-      });
-
     } catch(e) {
       console.error(e.message);
     }
   }
-
-  console.log(connectWallet())
 
   async function switchNetwork() {
     const chainIdHex = `0x${HARDHAT_NETWORK_ID.toString(16)}`;
@@ -45,11 +32,12 @@ function App() {
   }
 
   async function checkNetwork() {
-    if (window.ethereum.networkVersion !== HARDHAT_NETWORK_ID.toString()) {
-      return switchNetwork();
+    if (window.ethereum.networkVersion !== HARDHAT_NETWORK_ID) {
+      alert("Switching To Hardhat!");
+      return;
     }
 
-    return null;
+    alert("Correct Network. Don't switch!")
   }
 
   if (!window.ethereum) {
