@@ -5,7 +5,7 @@ const items = [
   { id: 2, text: 'Transaction 2', name : "Tumisang",balance :  100,expenses :  500,rewards :  "4pts"},
   { id: 3, text: 'Transaction 3', name : "Princess ",balance :  100,expenses :  500,rewards :  "2pts"},,
   { id: 4, text: 'Transaction 4', name : "Elie",balance :  1000,expenses :  500,rewards :  "10pts"},,
-  { id: 5, text: 'Transaction 5', name : "Koss A",balance :  100,expenses :  500,rewards :  "2pts"},,
+  { id: 5, text: 'Transaction 5', name : "Kossi ADANOU",balance :  100,expenses :  500,rewards :  "2pts"},,
   { id: 6, text: 'Transaction 6', name : "Maku ",balance :  1000,expenses :  500,rewards :  "5pts"},,
 ];
 
