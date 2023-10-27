@@ -1,12 +1,12 @@
 import React from 'react';
 
 const items = [
-  { id: 1, text: 'Transaction 1' },
-  { id: 2, text: 'Transaction 2' },
-  { id: 3, text: 'Transaction 3' },
-  { id: 4, text: 'Transaction 4' },
-  { id: 5, text: 'Transaction 5' },
-  { id: 6, text: 'Transaction 6' },
+  { id: 1, text: 'Transaction 1', name : "Kitsuana E",balance :  1000,expenses :  500,rewards :"2pts"},
+  { id: 2, text: 'Transaction 2', name : "Tumisang",balance :  100,expenses :  500,rewards :  "4pts"},
+  { id: 3, text: 'Transaction 3', name : "Princess ",balance :  100,expenses :  500,rewards :  "2pts"},,
+  { id: 4, text: 'Transaction 4', name : "Elie",balance :  1000,expenses :  500,rewards :  "10pts"},,
+  { id: 5, text: 'Transaction 5', name : "Koss A",balance :  100,expenses :  500,rewards :  "2pts"},,
+  { id: 6, text: 'Transaction 6', name : "Maku ",balance :  1000,expenses :  500,rewards :  "5pts"},,
 ];
 
 const ItemList = ({address}) => {
@@ -25,9 +25,15 @@ const ItemList = ({address}) => {
           <div
             key={item.id}
             className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transform
-            hover:scale-105 transition-transform duration-300 ease-in-out flex-1 mt-5 bg-blue-400 text-white"
+            hover:scale-105 transition-transform duration-300 ease-in-out flex-1 mt-5 bg-blue-900 text-white"
           >
-            <p className="text-xl font-semibold">{item.text}</p>
+            <div className="text-xl font-semibold">
+              <span className='block'>{item.text}</span>
+              <span className='block'>Name: {item.name}</span>
+              <span className='block'>Balance: {item.balance}</span>
+              <span className='block'>Expenses: {item.expenses}</span>
+              <span className='block'>Rewards: {item.rewards}</span>
+            </div>
           </div>
         ))}
       </div>

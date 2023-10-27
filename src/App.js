@@ -33,7 +33,7 @@ function App() {
 
   async function checkNetwork() {
     if (window.ethereum.networkVersion !== HARDHAT_NETWORK_ID) {
-      alert("Switching To Hardhat!");
+      // alert("Switching To Hardhat!");
       return;
     }
 
