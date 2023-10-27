@@ -13,4 +13,4 @@ export function ConnectWallet({ connect }) {
     )
 }
 
-export default WalletConnect;
+export default ConnectWallet;
