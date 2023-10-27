@@ -6,7 +6,7 @@ export function ConnectWallet({ connect }) {
             <br />
             <div>
                 <button onClick={connect} className="action-button bg-white p-6 rounded-lg shadow-md hover:shadow-lg transform
-            hover:scale-105 transition-transform duration-300 ease-in-out text-white bg-blue-900">
+            hover:scale-105 transition-transform duration-300 ease-in-out">
                     Connect to Wallet
                 </button>
             </div>

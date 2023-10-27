@@ -49,7 +49,7 @@ function App() {
     return <ConnectWallet connect={connectWallet} />
   }
   return (
-    <div className="bg-gray-100 min-h-screen flex items-center justify-center bg-blue-200">
+    <div className="bg-gray-100 min-h-screen flex items-center justify-center">
       <ItemList address={selectedAddress} />
     </div>
   );

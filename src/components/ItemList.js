@@ -25,7 +25,7 @@ const ItemList = ({address}) => {
           <div
             key={item.id}
             className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transform
-            hover:scale-105 transition-transform duration-300 ease-in-out flex-1 mt-5 bg-blue-900 text-white"
+            hover:scale-105 transition-transform duration-300 ease-in-out flex-1 mt-5"
           >
             <div className="text-xl font-semibold">
               <span className='block'>{item.text}</span>
